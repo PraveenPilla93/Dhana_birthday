@@ -5,9 +5,6 @@ import {
   CalendarHeart,
   Gift,
   Heart,
-  Music2,
-  Pause,
-  Play,
   Sparkles,
   Star,
 } from 'lucide-react';
