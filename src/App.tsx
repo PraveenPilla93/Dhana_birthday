@@ -422,43 +422,6 @@ function App() {
                 </div>
               </section>
 
-              <section id="music" className="section-block music-section">
-                <div className="section-heading">
-                  <p className="eyebrow">Soundtrack</p>
-                  <h3>Play a tiny love song for you</h3>
-                </div>
-
-                <div className="music-card glass-card">
-                  <div className="music-visual" aria-hidden="true">
-                    {[1, 2, 3, 4, 5].map((bar) => (
-                      <span key={bar} className={musicEnabled ? 'bar active' : 'bar'} style={{ animationDelay: `${bar * 0.14}s` }} />
-                    ))}
-                  </div>
-
-                  <div className="music-details">
-                    <p className="track-name">
-                      <Music2 size={16} className="track-icon" />
-                      Birthday Mood
-                    </p>
-                    <p className="track-subtitle">A placeholder track you can personalize later.</p>
-                  </div>
-
-                  <button
-                    type="button"
-                    className="music-button"
-                    onClick={() => setMusicEnabled((prev) => !prev)}
-                    aria-label={musicEnabled ? 'Pause music' : 'Play music'}
-                  >
-                    {musicEnabled ? <Pause size={18} /> : <Play size={18} />}
-                    {musicEnabled ? 'Pause' : 'Play'}
-                  </button>
-
-                  <audio ref={audioRef} loop preload="auto" aria-hidden="true">
-                    <source src="/audio/Arere Yekkada.mp3" type="audio/mp3" />
-                  </audio>
-                </div>
-              </section>
-
               <section id="surprise" className="section-block final-section">
                 <div className="surprise-card glass-card">
                   <div className="surprise-header">
